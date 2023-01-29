@@ -68,10 +68,11 @@ function showLightingModeIcon() {
 
 function setUserColorMode(manual = false) {
   if(lighting_mode_toggle) {
-    const current_mode = bank.getItem(storage_key);
+    let current_mode = bank.getItem(storage_key);
     if(current_mode) {
       manual ? changeMode(current_mode) : getSetAttribute(doc, data, current_mode);
     } else {
+      current_mode = getSystemMode();
       manual ? changeMode(current_mode) : false;
     }
 
