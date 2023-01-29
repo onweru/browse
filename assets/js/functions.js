@@ -114,3 +114,7 @@ function toggleSprite(name, parent) {
     </svg>
   `;
 }
+
+function elementStartsWith(el, str) {
+  return el.indexOf(str) !== 0;
+}

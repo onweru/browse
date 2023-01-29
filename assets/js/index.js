@@ -186,7 +186,7 @@ wrapOrphanedPreElements();
 function codeBlocks() {
   const marked_code_blocks = elems('code');
   const blocks = Array.from(marked_code_blocks).filter(function(block){
-    return hasClasses(block) && !Array.from(block.classList).includes('noClass');
+    return block.closest('pre') && !Array.from(block.classList).includes('noClass');
   }).map(function(block){
     return block
   });
@@ -286,7 +286,9 @@ function copyCodeBlockContents(target){
       const lines = elems('span', block);
       Array.from(lines).forEach(line => {
         let line_contents = line.textContent.trim(' ');
-        if(line_contents.indexOf('$') !== 0) {
+        const is_highlighted = elementStartsWith(line_contents, '$');
+        const is_output = elementStartsWith(line_contents, '>');
+        if( is_highlighted && is_output && !line.closest('.shell')) {
           pushClass(line.lastElementChild, 'shell');
         }
       });
