@@ -1391,13 +1391,15 @@ textarea {
 .copied::before,
 .copied::after{
 	position: absolute;
+	--search-bg-color: var(--generic-output-color);
 }
 .copied::before {
 	--horizontal-offset: 2.4rem;
 	content: var(--copied-text);
 	top: 0;
 	background-color: var(--search-bg-color);
-	color: var(--syntax-color-1);
+	color: #5af78e;
+	font-weight: 700;
 	min-width: 5rem;
 	padding: 0.3rem 0.5rem;
 	font-size: 0.9rem;
@@ -1443,9 +1445,10 @@ textarea {
 	--size: 2rem;
 	width: var(--size);
 	height: var(--size);
-	border: 1.5px solid var(--border-color);
+	border: 1.1px solid var(--syntax-color-1);
+	background-color: var(--pre-bg-color);
 	border-radius: 0.33rem;
-	opacity: 0.8 !important;
+	opacity: 1 !important;
 	position: relative !important;
 	left: initial !important;
 	min-height: auto !important;
@@ -1541,7 +1544,6 @@ textarea {
 	position: relative;
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
 }
 .shell::before {
 	content: "$";
@@ -1549,4 +1551,5 @@ textarea {
 	font-weight: 500;
 	transform: scale(1.1);
 	transform-origin: 50% 50%;
+	margin-right: 0.5rem;
 }
