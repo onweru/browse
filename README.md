@@ -229,10 +229,10 @@ For more information about all available standard front matter variables, please
 ## Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the
-[issue tracker](https://github.com/Vimux/mainroad/issues) to let me know. Or make directly a
-[pull request](https://github.com/Vimux/mainroad/pulls), but please respect the following
-[contributing guide](https://github.com/Vimux/mainroad/blob/master/CONTRIBUTING.md).
+[issue tracker](https://github.com/onweru/browse/issues) to let me know. Or make directly a
+[pull request](https://github.com/onweru/browse/pulls), but please respect the following
+[contributing guide](https://github.com/onweru/browse/blob/master/CONTRIBUTING.md).
 
 ## License
 
-This theme is released under the [GPLv2 license](https://github.com/Vimux/mainroad/blob/master/LICENSE.md).
+This theme is released under the [GPLv2 license](https://github.com/onweru/browse/blob/master/LICENSE.md).
