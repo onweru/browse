@@ -6,7 +6,7 @@ homepage = "https://github.com/onweru/browse/"
 demosite = "https://browse.neuralvibes.com/"
 tags = ["blog", "responsive", "multilingual", "rss", "darkmode"]
 features = ["blog", "responsive", "multilingual", "rss", "darkmode"]
-min_version = "0.85"
+min_version = "0.93.0"
 
 [[authors]]
   name = "Dan Weru"
