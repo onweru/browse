@@ -27,24 +27,61 @@
 [created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). After that, you are ready
 to install **Browse**.*
 
-From your project's root directory, run:
+You could go with the options right below.
 
-```
-git clone https://github.com/onweru/browse.git themes/browse
+### Option 1 (my favorite)
+
+This option enables you to load browse theme as a hugo module. First things first, ensure you have `go` binary [installed on your machine](https://golang.org/doc/install).
+
+```shell
+$ git clone https://github.com/onweru/browse/
+cd browse/exampleSite/
+hugo server
 ```
 
-Or, if you don't plan to make any significant changes but want to track and update the theme, you can add it as a git
-submodule via the following command:
+To pull in theme updates, run `hugo mod get -u ./...` from the theme folder. If unsure, [learn how to update hugo modules](https://gohugo.io/hugo-modules/use-modules/#update-modules)
 
-```
-git submodule add https://github.com/onweru/browse.git themes/mainroad
+{{< tip "warning" >}}
+The exampleSite uses the theme as a hugo module by default.
+
+If you choose __Option 2__ or __Option 3__ below, ensure you edit [these lines in the config.toml file](https://github.com/onweru/browse/blob/b3e30e0816621223224897edc45eeeabd0d9cd16/exampleSite/config.toml#L4-L7) as advised on the comments. Else, you will not be able to pull theme updates.
+{{< /tip >}}
+
+### Option 2 (recommended)
+
+Generate a new Hugo site and add this theme as a Git submodule inside your themes folder:
+
+```bash
+hugo new site yourSiteName
+cd yourSiteName
+git init
+git submodule add https://github.com/onweru/browse/ themes/browse
+cp -a themes/browse/exampleSite/* .
 ```
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `mainroad`:
+Then run
 
+```bash
+hugo server
 ```
-theme = "browse"
+
+Hurray!
+
+### Option 3 (Great for testing quickly)
+
+You can run your site directly from the `exampleSite`. To do so, use the following commands:
+
+```bash
+git clone https://github.com/onweru/browse/
+cd browse/exampleSite/
+hugo server --themesDir ../..
 ```
+
+{{< tip >}}
+Although, option 3 is great for quick testing, it is somewhat problematic when you want to update your theme. You would need to be careful not to overwrite your changes.
+{{< /tip >}}
+
+Once set, jump over to the [config.toml](https://github.com/onweru/browse/blob/afdf1cd76408aeac11547a6abd51bdc5138a295f/exampleSite/config.toml#L4-L7) file and start configuring your site.
 
 ## Configuration
 
