@@ -1,11 +1,10 @@
-# Mainroad
+# Browse
 
-**Mainroad** is a responsive, simple, clean and content-focused [Hugo](https://gohugo.io/) theme based on the
-[MH Magazine lite](https://wordpress.org/themes/mh-magazine-lite/) theme.
+**Browse** is a responsive [Hugo](https://gohugo.io/) Hugo theme. It's a fork of the Hugo [Mainroad theme](https://github.com/Vimux/Mainroad).
 
 **[Demo](https://mainroad-demo.netlify.app/)** • **[Docs](https://mainroad-demo.netlify.app/docs/)**
 
-![screenshot](https://raw.githubusercontent.com/Vimux/Mainroad/master/images/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/onweru/browse/master/images/screenshot.png)
 
 **Features:**
 
@@ -26,25 +25,25 @@
 *Before starting, please be sure that you have
 [installed Hugo](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) and
 [created a new site](https://gohugo.io/getting-started/quick-start/#step-2-create-a-new-site). After that, you are ready
-to install **Mainroad**.*
+to install **Browse**.*
 
 From your project's root directory, run:
 
 ```
-git clone https://github.com/vimux/mainroad.git themes/mainroad
+git clone https://github.com/onweru/browse.git themes/browse
 ```
 
 Or, if you don't plan to make any significant changes but want to track and update the theme, you can add it as a git
 submodule via the following command:
 
 ```
-git submodule add https://github.com/vimux/mainroad.git themes/mainroad
+git submodule add https://github.com/onweru/browse.git themes/mainroad
 ```
 
 Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `mainroad`:
 
 ```
-theme = "mainroad"
+theme = "browse"
 ```
 
 ## Configuration
@@ -53,7 +52,7 @@ theme = "mainroad"
 
 ```toml
 baseurl = "/"
-title = "Mainroad"
+title = "Browse"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = "mainroad"
@@ -102,7 +101,7 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
 [Params.logo]
   image = "img/placeholder.png" # Logo image. Path relative to "static"
-  title = "Mainroad" # Logo title, otherwise will use site title
+  title = "Browse" # Logo title, otherwise will use site title
   subtitle = "Just another site" # Logo subtitle
 
 [Params.thumbnail]

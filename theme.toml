@@ -1,19 +1,25 @@
-name = "Mainroad"
+name = "Browse"
 license = "GPLv2"
-licenselink = "https://github.com/vimux/mainroad/blob/master/LICENSE.md"
-description = "Mainroad is a responsive, clean and content-focused Hugo theme."
-homepage = "https://github.com/vimux/mainroad/"
-demosite = "https://mainroad-demo.netlify.app/"
-tags = ["blog", "responsive", "light", "multilingual", "customizable", "widgets", "wordpress"]
-features = ["blog", "responsive", "multilingual", "widgets", "rss", "disqus", "google analytics", "wordpress"]
-min_version = "0.48"
+licenselink = "https://github.com/onweru/browse/blob/master/LICENSE.md"
+description = "Browse is a responsive, clean and content-focused Hugo theme."
+homepage = "https://github.com/onweru/browse/"
+demosite = "https://browse.neuralvibes.com/"
+tags = ["blog", "responsive", "multilingual", "rss", "darkmode"]
+features = ["blog", "responsive", "multilingual", "rss", "darkmode"]
+min_version = "0.85"
 
-[author]
+[[authors]]
+  name = "Dan Weru"
+  homepage = "https://neuralvibes.com/author/"
+[[authors]]
+  name = "Andrew Hoog"
+  homepage = "https://www.nowsecure.com/"
+[[authors]]
   name = "Vimux"
-  homepage = "https://github.com/vimux"
+  homepage = "https://github.com/Vimux"
 
 # If porting an existing theme
 [original]
-  name = "MH Magazine lite"
-  homepage = "https://wordpress.org/themes/mh-magazine-lite/"
-  repo = "https://themes.trac.wordpress.org/browser/mh-magazine-lite/2.5.6"
+  name = "Mainroad Hugo Theme"
+  homepage = "https://github.com/Vimux/Mainroad"
+  repo = "https://github.com/Vimux/Mainroad"
