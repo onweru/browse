@@ -24,16 +24,16 @@ The answers have been categorized into two groups:
 
 ## General questions
 
-### Do I need to have prior experience before proceeding with the Mainroad theme?
+### Do I need to have prior experience before proceeding with the Browse theme?
 
 **Yes.** You'll need to be familiar with Hugo before proceeding.
-[Our docs section]({{< ref "/docs/_index.md" >}} "Mainroad theme documentation") is intended for intermediate to
+[Our docs section]({{< ref "/docs/_index.md" >}} "Browse theme documentation") is intended for intermediate to
 advanced users and developers. Our documentation may still be helpful to users with minimal experience, but are not
 comprehensive.
 
 ### Do I need to use the extended version of Hugo?
 
-**No.** Mainroad theme intentionally does not use any features of the extended version. As such, the extended version of
+**No.** Browse theme intentionally does not use any features of the extended version. As such, the extended version of
 Hugo is not required (but applicable).
 
 ### Is there a list of all possible configuration options?
@@ -42,20 +42,20 @@ Hugo is not required (but applicable).
 
 * See [All Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings)
 for the full list of Hugo-defined variables with their default values.
-* See [Mainroad config.toml example](https://github.com/Vimux/Mainroad#configtoml-example) for the full list of
-Mainroad-specific variables.
+* See [Browse config.toml example](https://github.com/Vimux/Browse#configtoml-example) for the full list of
+Browse-specific variables.
 
 **Front Matter:**
 
 * See [Front Matter Variables](https://gohugo.io/content-management/front-matter#front-matter-variables) for the
 list of Hugo-defined Front Matter variables.
-* See [Mainroad Front Matter example](https://github.com/Vimux/Mainroad#front-matter-example) for the list of
-Mainroad-specific Front Matter variables.
+* See [Browse Front Matter example](https://github.com/Vimux/Browse#front-matter-example) for the list of
+Browse-specific Front Matter variables.
 
 ### What if I have more questions? Should I create an issue?
 
 **We don't provide personal technical support.** As stated in our
-[contributing guidelines](https://github.com/Vimux/Mainroad/blob/master/CONTRIBUTING.md), please do not use the issue
+[contributing guidelines](https://github.com/Vimux/Browse/blob/master/CONTRIBUTING.md), please do not use the issue
 tracker for personal support. This includes reports like: “How do I do this", “Everything is broken; help me”, “I
 changed something, and it doesn't work anymore”, “It's not a personal issue, but I just want to ask how X or Y works”,
 “I forked your theme, then something broke; fix this immediately”, and so on.
@@ -70,8 +70,8 @@ contributing rules**. All other issues will be closed and marked as invalid.
 There is no way to do this on the fly with Hugo, but you can use the one-liners below with some preparations:
 
 1. Copy:
-    * `./themes/mainroad/static/favicon.ico` to `./static/favicon.ico`
-    * `./themes/mainroad/static/apple-touch-icon.png` to `./static/apple-touch-icon.png`
+    * `./themes/browse/static/favicon.ico` to `./static/favicon.ico`
+    * `./themes/browse/static/apple-touch-icon.png` to `./static/apple-touch-icon.png`
 1. At the beginning of each script, replace the color in the variable with your preferred color. You must use
 six-digit hex triplet notation (e.g., `#E22D30`) to make it work properly.
 
@@ -129,4 +129,4 @@ required.
 Google PSE (CSE) should work when it's done. Look and feel will be far from perfect, but you have to solve this problem
 with [Google PSE Control Panel](https://programmablesearchengine.google.com/controlpanel/all) and additional CSS.
 
-[Edit this page on GitHub](https://github.com/vimux/mainroad/blob/master/exampleSite/content/docs/faq.md)
+[Edit this page on GitHub](https://github.com/vimux/browse/blob/master/exampleSite/content/docs/faq.md)

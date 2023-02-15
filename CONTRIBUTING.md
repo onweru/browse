@@ -1,12 +1,12 @@
-# Contributing to Mainroad
+# Contributing to Browse
 
-**Mainroad** welcomes contributions and corrections. Before contributing, please make sure you have read the guidelines
+**Browse** welcomes contributions and corrections. Before contributing, please make sure you have read the guidelines
 below. If you're a newcomer to open source and you haven't contributed to other projects or used
 [Git](https://git-scm.com/) before, you should make yourself familiar before proceeding.
 
 ## Issues
 
-The [issue tracker](https://github.com/vimux/mainroad/issues) is the preferred channel for bug reports and features
+The [issue tracker](https://github.com/onweru/browse/issues) is the preferred channel for bug reports and features
 requests, but please respect the following restrictions:
 
 ### General requirements
@@ -122,4 +122,4 @@ to those feedback, otherwise the PR will be closed after 2-4 weeks of inactivity
 
 ## License
 
-By contributing to Mainroad, you agree that your contributions will be licensed under [GPLv2 License](LICENSE.md).
+By contributing to Browse, you agree that your contributions will be licensed under [GPLv2 License](LICENSE.md).

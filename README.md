@@ -2,7 +2,7 @@
 
 **Browse** is a responsive [Hugo](https://gohugo.io/) Hugo theme. It's a fork of the Hugo [Mainroad theme](https://github.com/Vimux/Mainroad).
 
-**[Demo](https://mainroad-demo.netlify.app/)** • **[Docs](https://mainroad-demo.netlify.app/docs/)**
+**[Demo](https://browse.neuralvibes.com/)** • **[Docs](https://browse.neuralvibes.com/docs/)**
 
 ![screenshot](https://raw.githubusercontent.com/onweru/browse/master/images/screenshot.png)
 
@@ -92,7 +92,7 @@ baseurl = "/"
 title = "Browse"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
-theme = "mainroad"
+theme = "browse"
 disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
 
