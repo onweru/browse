@@ -7,7 +7,7 @@ menu: main
 ---
 
 Our website builds with [Hugo](https://gohugo.io/) static site generator and
-[Browse](https://github.com/vimux/browse) theme. This demo allows you to see what Browse based website looks like
+[Browse](https://github.com/onweru/browse) theme. This demo allows you to see what Browse based website looks like
 before deciding to go with it. Just keep in mind that the current demo shows the basics, a small part of what the
 combination of Hugo and Browse can do.
 
@@ -28,8 +28,8 @@ Main features:
   * Mobile: Android browser (on Android 4.4+), Safari (on iOS 7+), Google Chrome, Opera mini
 * Custom Google Fonts support, MathJax, Table of Contents, SVG icons and much more…
 
-Learn more on [GitHub](https://github.com/vimux/browse). Browse theme is released under the
-[GPLv2 license](https://github.com/vimux/browse/blob/master/LICENSE.md).
+Learn more on [GitHub](https://github.com/onweru/browse). Browse theme is released under the
+[GPLv2 license](https://github.com/onweru/browse/blob/master/LICENSE.md).
 
 ## About Hugo
 

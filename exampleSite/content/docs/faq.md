@@ -42,20 +42,20 @@ Hugo is not required (but applicable).
 
 * See [All Configuration Settings](https://gohugo.io/getting-started/configuration/#all-configuration-settings)
 for the full list of Hugo-defined variables with their default values.
-* See [Browse config.toml example](https://github.com/Vimux/Browse#configtoml-example) for the full list of
+* See [Browse config.toml example](https://github.com/onweru/Browse#configtoml-example) for the full list of
 Browse-specific variables.
 
 **Front Matter:**
 
 * See [Front Matter Variables](https://gohugo.io/content-management/front-matter#front-matter-variables) for the
 list of Hugo-defined Front Matter variables.
-* See [Browse Front Matter example](https://github.com/Vimux/Browse#front-matter-example) for the list of
+* See [Browse Front Matter example](https://github.com/onweru/Browse#front-matter-example) for the list of
 Browse-specific Front Matter variables.
 
 ### What if I have more questions? Should I create an issue?
 
 **We don't provide personal technical support.** As stated in our
-[contributing guidelines](https://github.com/Vimux/Browse/blob/master/CONTRIBUTING.md), please do not use the issue
+[contributing guidelines](https://github.com/onweru/Browse/blob/master/CONTRIBUTING.md), please do not use the issue
 tracker for personal support. This includes reports like: “How do I do this", “Everything is broken; help me”, “I
 changed something, and it doesn't work anymore”, “It's not a personal issue, but I just want to ask how X or Y works”,
 “I forked your theme, then something broke; fix this immediately”, and so on.
@@ -129,4 +129,4 @@ required.
 Google PSE (CSE) should work when it's done. Look and feel will be far from perfect, but you have to solve this problem
 with [Google PSE Control Panel](https://programmablesearchengine.google.com/controlpanel/all) and additional CSS.
 
-[Edit this page on GitHub](https://github.com/vimux/browse/blob/master/exampleSite/content/docs/faq.md)
+[Edit this page on GitHub](https://github.com/onweru/browse/blob/master/exampleSite/content/docs/faq.md)

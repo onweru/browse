@@ -38,7 +38,7 @@ If you don't plan to make significant changes to the theme but still want to tra
 your Hugo site:
 
 ```sh
-git submodule add https://github.com/vimux/browse.git themes/browse
+git submodule add https://github.com/onweru/browse.git themes/browse
 ```
 
 **Note:**
@@ -52,13 +52,13 @@ instead of git clone.
 Run this [git clone](https://git-scm.com/docs/git-clone) command from the root of your Hugo site:
 
 ```sh
-git clone https://github.com/vimux/browse.git themes/browse
+git clone https://github.com/onweru/browse.git themes/browse
 ```
 
 ### Option C: Manual install
 
 If you do not want to use git, you can manually
-**[download ZIP](https://github.com/vimux/browse/archive/master.zip)** and extract it into the `themes/browse`
+**[download ZIP](https://github.com/onweru/browse/archive/master.zip)** and extract it into the `themes/browse`
 within your Hugo site.
 
 ---
@@ -75,12 +75,12 @@ To check it out, build the site via `hugo` command or make it available on a loc
 
 ## Minimal configuration
 
-**Do not copy the [example config](https://github.com/vimux/browse#configtoml-example) as-is.**
+**Do not copy the [example config](https://github.com/onweru/browse#configtoml-example) as-is.**
 Use only the parameters that you need. The Browse theme contains required defaults, so you don't need to add all of
 the configuration parameters to run the theme for the first time. Before adding any theme-specific parameters, make
 sure to edit the `theme` param inside the config file and check that the theme works.
 
 For information about common customization settings, see [Customization page]({{< relref "/docs/customization.md" >}} "Browse theme customization").
-To view our example configuration, visit [demo config](https://github.com/vimux/browse/blob/master/exampleSite/config.toml).
+To view our example configuration, visit [demo config](https://github.com/onweru/browse/blob/master/exampleSite/config.toml).
 
-[Edit this page on GitHub](https://github.com/vimux/browse/blob/master/exampleSite/content/docs/getting-started.md)
+[Edit this page on GitHub](https://github.com/onweru/browse/blob/master/exampleSite/content/docs/getting-started.md)
