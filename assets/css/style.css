@@ -277,6 +277,19 @@ pre {
 	color: var(--body-text-color);
 }
 
+pre:hover {
+	word-wrap: break-word;
+	white-space: pre-wrap;
+}
+
+pre:hover code {
+	word-break: break-all;
+}
+
+pre:hover .shell {
+	align-items: flex-start;
+}
+
 pre code {
 	padding: 0;
 	color: inherit;
