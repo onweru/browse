@@ -86,6 +86,7 @@ Once set, jump over to the [config.toml](https://github.com/onweru/browse/blob/a
 ## Configuration
 
 ### Config.toml example
+config/_default/config.toml
 
 ```toml
 baseurl = "/"
@@ -100,90 +101,103 @@ googleAnalytics = "" # Enable Google Analytics by entering your tracking id
   name = "John Doe"
   bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
   avatar = "img/avatar.png"
+```
 
-[Params]
-  description = "John Doe's Personal blog about everything" # Site description. Used in meta description
-  copyright = "John Doe" # Footer copyright holder, otherwise will use site title
-  opengraph = true # Enable OpenGraph if true
-  schema = true # Enable Schema
-  twitter_cards = true # Enable Twitter Cards if true
-  readmore = false # Show "Read more" button in list if true
-  authorbox = true # Show authorbox at bottom of pages if true
-  toc = true # Enable Table of Contents
-  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-  mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
-  dateformat = "2006-01-02" # Change the format of dates
-  mathjax = true # Enable MathJax
-  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
-  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-  googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
-  customCSS = ["css/custom.css"] # Include custom CSS files
-  customJS = ["js/custom.js"] # Include custom JS files
-  defaultLightingMode = "auto" # other possible values: "dark", "light" ... if set to auto, the website will load in darkmode if the device is set to darkmode
-  iconsDir = "img/" #defaults to "icons/"
+### Example Params.toml file
 
-  # DEPRECATED PARAMS
-  subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
-  highlightColor = "" # Deprecated in favor of .Site.Params.style.vars.highlightColor
+config/_default/params.toml
 
-[Params.style.vars]
-  highlightColor = "#e22d30" # Override highlight color
+```toml
+description = "John Doe's Personal blog about everything" # Site description. Used in meta description
+copyright = "John Doe" # Footer copyright holder, otherwise will use site title
+opengraph = true # Enable OpenGraph if true
+schema = true # Enable Schema
+twitter_cards = true # Enable Twitter Cards if true
+readmore = false # Show "Read more" button in list if true
+authorbox = true # Show authorbox at bottom of pages if true
+toc = true # Enable Table of Contents
+pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
+dateformat = "2006-01-02" # Change the format of dates
+mathjax = true # Enable MathJax
+mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
+customCSS = ["css/custom.css"] # Include custom CSS files
+customJS = ["js/custom.js"] # Include custom JS files
+defaultLightingMode = "auto" # other possible values: "dark", "light" ... if set to auto, the website will load in darkmode if the device is set to darkmode
+iconsDir = "img/" #defaults to "icons/"
+[style.vars]
+highlightColor = "#e22d30" # Override highlight color
+```
 
-  # Override font-family sets
-  # Take care of different quotes OR escaping symbols in these params if necessary
-  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
-  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
-  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+#### Override font-family sets
 
-[Params.logo]
-  image = "img/placeholder.png" # Logo image. Path relative to "static"
-  title = "Browse" # Logo title, otherwise will use site title
-  subtitle = "Just another site" # Logo subtitle
+```toml
+fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
+fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
+```
 
-[Params.thumbnail]
-  visibility = ["list", "post"] # Control thumbnail visibility
+```toml
+[logo]
+image = "img/placeholder.png" # Logo image. Path relative to "static"
+title = "Browse" # Logo title, otherwise will use site title
+subtitle = "Just another site" # Logo subtitle
 
-[Params.sidebar]
-  home = "right" # Configure layout for home page
-  list = "left"  # Configure layout for list pages
-  single = false # Configure layout for single pages
-  # Enable widgets in given order
-  widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+[thumbnail]
+visibility = ["list", "post"] # Control thumbnail visibility
+```
 
-[Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  categories_counter = false # Enable counter for each category in "Categories" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget
+```toml
+[sidebar]
+home = "right" # Configure layout for home page
+list = "left"  # Configure layout for list pages
+single = false # Configure layout for single pages
+# Enable widgets in given order
+widgets = ["search", "recent", "categories", "taglist", "social", "languages"]
+```
 
-[Params.widgets.social]
-  # Enable parts of social widget
-  facebook = "username"
-  twitter = "username"
-  instagram = "username"
-  linkedin = "username"
-  telegram = "username"
-  github = "username"
-  gitlab = "username"
-  bitbucket = "username"
-  email = "example@example.com"
+```toml
+[widgets]
+recent_num = 5 # Set the number of articles in the "Recent articles" widget
+categories_counter = false # Enable counter for each category in "Categories" widget
+tags_counter = false # Enable counter for each tag in "Tags" widget
+```
 
-# Custom social links
-[[Params.widgets.social.custom]]
-  title = "Youtube"
-  url = "https://youtube.com/user/username"
-  icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
-  rel = "noopener noreferrer" # Set to false to remove the rel attribute
+#### Enable parts of social widget
 
-[[Params.widgets.social.custom]]
-  title = "My Home Page"
-  url = "https://example.com"
+```
+[widgets.social]
+facebook = "username"
+twitter = "username"
+instagram = "username"
+linkedin = "username"
+telegram = "username"
+github = "username"
+gitlab = "username"
+bitbucket = "username"
+email = "example@example.com"
+```
 
-[Params.widgets.search]
-  url = "https://google.com/search"
-  [Params.widgets.search.input]
-    name = "sitesearch"
-    pre = ""
+####  Custom social links
+
+```toml
+[[widgets.social.custom]]
+title = "Youtube"
+url = "https://youtube.com/user/username"
+icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
+rel = "noopener noreferrer" # Set to false to remove the rel attribute
+
+[[widgets.social.custom]]
+title = "My Home Page"
+url = "https://example.com"
+
+[widgets.search]
+url = "https://google.com/search"
+[widgets.search.input]
+  name = "sitesearch"
+  pre = ""
 ```
 
 **Do not copy example config as-is**. Use only those parameters that you need.
