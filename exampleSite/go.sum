@@ -8,3 +8,5 @@ github.com/onweru/browse v0.0.0-20230215085041-4136918aff0e h1:X6NpgxhQsU3SKDQK1
 github.com/onweru/browse v0.0.0-20230215085041-4136918aff0e/go.mod h1:lQxnEwXivdYP3BNDXKu8XX0dgt+E9wThmZZkEQXkg0g=
 github.com/onweru/browse v0.0.0-20230412164202-56a124b83d17 h1:qAs++vTlqrsWCju08Wl/ZurZdMZas5R0XWHDKIVCuQg=
 github.com/onweru/browse v0.0.0-20230412164202-56a124b83d17/go.mod h1:lQxnEwXivdYP3BNDXKu8XX0dgt+E9wThmZZkEQXkg0g=
+github.com/onweru/browse v0.0.0-20230412171053-c8a1d9a7ce46 h1:3BgG8Gs7UyWKLkcSKoRdFTy/xZv5ixgSQWP3CH7pETo=
+github.com/onweru/browse v0.0.0-20230412171053-c8a1d9a7ce46/go.mod h1:lQxnEwXivdYP3BNDXKu8XX0dgt+E9wThmZZkEQXkg0g=
