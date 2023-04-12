@@ -1,0 +1,4 @@
+{{- if hugo.IsProduction }}
+  {{ partialCached "analytics/google" . }}
+  {{ partialCached "analytics/matomo" . }}
+{{- end }}

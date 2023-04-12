@@ -226,6 +226,18 @@ widgets: # Enable sidebar widgets in given order per page
 For more information about all available standard front matter variables, please read
 [Hugo Front Matter](https://gohugo.io/content-management/front-matter).
 
+### Matomo site analytics
+
+If you prefer using Matomo Analytics, configure the `matomo_analytics` global parameters in your site with the following.
+
+`enable` To enable matomo analytics change to `true`.
+
+`websiteDomain` Set the domain name of your website, in most cases same as your base URL this is required.
+
+`matomoDomain`   Set to Matomo domain
+
+`matomoSiteID`  Default is set to 1, change this to the siteid being tracked
+
 ## Contributing
 
 Have you found a bug or got an idea for a new feature? Feel free to use the
