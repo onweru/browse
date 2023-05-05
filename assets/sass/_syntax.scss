@@ -1,0 +1,169 @@
+.highlight {
+  .lnlinks {
+    outline: none;
+    text-decoration: none;
+    color: inherit;
+  }
+  .lntd {
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  .lntable {
+    border-spacing: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+  .lnt {
+    white-space: pre;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+  }
+
+  .ln {
+    white-space: pre;
+    user-select: none;
+    margin-right: 0.4em;
+    padding: 0 0.4em 0 0.4em;
+  }
+
+  .line {
+    display: flex;
+  }
+
+  /* .bg {
+    color: var(--syntax-color-3);
+    background-color: var(--syntax-color-2);
+  } */
+  // {
+  //   color: var(--syntax-color-3);
+  //   /* background-color: var(--syntax-color-2); */
+  // }
+
+  .err {
+    color: var(--syntax-color-4);
+  }
+
+  .hl {
+    background-color: var(--line-highlight-color);
+  }
+  .lnt {
+    color: var(--syntax-color-7);
+  }
+  .ln {
+    color: var(--syntax-color-7);
+  }
+  .k,
+  .kc {
+    color: var(--syntax-color-5);
+  }
+  .kd {
+    color: var(--syntax-color-4);
+  }
+  .kn,
+  .kp,
+  .kr {
+    color: var(--syntax-color-5);
+  }
+  .kt {
+    color: var(--keyword-type-color);
+  }
+  .na {
+    color: var(--syntax-color-9);
+  }
+  .nb {
+    color: var(--syntax-color-4);
+  }
+  .nc {
+    color: var(--name-class-color);
+  }
+  .no,
+  .nd {
+    color: var(--syntax-color-6);
+  }
+
+  .nf {
+    color: var(--syntax-color-9);
+  }
+
+  .nl {
+    color: var(--syntax-color-4);
+  }
+  .nt {
+    color: var(--syntax-color-5);
+  }
+  .nv,
+  .vc,
+  .vg,
+  .vi {
+    color: var(--syntax-color-4);
+  }
+
+  .s,
+  .sa,
+  .sb,
+  .sc,
+  .dl,
+  .sd,
+  .s2,
+  .se,
+  .sh,
+  .si,
+  .sx,
+  .sr,
+  .s1,
+  .ss {
+    color: var(--syntax-color-1);
+  }
+  .m,
+  .mb,
+  .mf,
+  .mh,
+  .mi,
+  .il,
+  .mo {
+    color: var(--syntax-color-6);
+  }
+  .o,
+  .ow {
+    color: var(--syntax-color-5);
+  }
+  .c,
+  .ch,
+  .cm,
+  .c1,
+  .cs,
+  .cp,
+  .cpf {
+    color: var(--syntax-color-8);
+  }
+
+  .gd {
+    color: var(--syntax-color-4);
+  }
+  .ge {
+    text-decoration: underline
+  }
+  .gr {
+    color: var(--syntax-color-4);
+  }
+  .gh,
+  .gi {
+    font-weight: bold
+  }
+  .go {
+    color: var(--generic-output-color);
+  }
+  .gs {
+    font-style: italic;
+  }
+  .gu {
+    font-weight: bold;
+  }
+  .gl {
+    text-decoration: underline;
+  }
+}
