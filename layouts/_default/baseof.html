@@ -6,44 +6,7 @@
 				data-mode="{{ . }}"
 			{{ end }}>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>{{ block "title" . }}{{ if not .IsHome }}{{ .Title }} - {{ end }}{{ .Site.Title }}{{ end }}</title>
-	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="{{ if .IsHome }}{{ $config.description }}{{ else }}{{ .Params.Description }}{{ end }}">
-	{{- if $config.opengraph }}
-		{{ template "_internal/opengraph.html" . }}
-	{{- end }}
-	{{- if $config.schema }}
-		{{ template "_internal/schema.html" . }}
-	{{- end }}
-	{{- if $config.twitter_cards }}
-		{{ template "_internal/twitter_cards.html" . }}
-	{{- end }}
-
-	{{- $googleFontsLink := $config.googleFontsLink | default "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" }}
-	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
-	{{- end }}
-
-  {{ partialCached "functions/getStyles" . }}
-
-	{{- with .OutputFormats.Get "rss" }}
-	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
-	{{- end }}
-
-	<link rel="shortcut icon" href="{{ "favicon.ico" | relURL }}">
-	{{- if hugo.IsProduction }}
-		{{- if hasPrefix site.GoogleAnalytics "G-" }}
-			{{ template "_internal/google_analytics.html" . }}
-		{{- else }}
-			{{ template "_internal/google_analytics_async.html" . }}
-		{{- end }}
-	{{- end }}
+	{{ partial "head" . }}
 </head>
 <body class="body">
 	<div class="container container--outer">
