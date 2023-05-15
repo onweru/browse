@@ -1,8 +1,12 @@
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 1080px;
 	margin: 0 auto;
+	--width: 1080px;
+	max-width: var(--width);
+	@media screen and (min-width: 1440px) {
+		--width: 1366px;
+	}
 }
 
 .container--outer {
