@@ -7,12 +7,14 @@
 	@media screen and (min-width: 1440px) {
 		--width: 1366px;
 	}
+	
+	&--outer {
+		margin: 25px auto;
+		box-shadow: 0 0 10px rgba(50, 50, 50, .17);
+	}
 }
 
-.container--outer {
-	margin: 25px auto;
-	box-shadow: 0 0 10px rgba(50, 50, 50, .17);
-}
+
 
 .wrapper {
 	padding: 25px;
@@ -40,28 +42,29 @@
 	order: 2;
 	min-width: 0;
 	margin: 0 0 0 2.5%;
+
+	&--left {
+		-webkit-order: 0;
+		order: 0;
+		margin: 0 2.5% 0 0;
+	}
 }
 
-.sidebar--left {
-	-webkit-order: 0;
-	order: 0;
-	margin: 0 2.5% 0 0;
-}
 
 .clearfix {
 	display: block;
+	&::after {
+		display: block;
+		height: 0;
+		padding: 0;
+		margin: 0;
+		clear: both;
+		line-height: 0;
+		visibility: hidden;
+		content: "";
+	}
 }
 
-.clearfix::after {
-	display: block;
-	height: 0;
-	padding: 0;
-	margin: 0;
-	clear: both;
-	line-height: 0;
-	visibility: hidden;
-	content: "";
-}
 
 /* Button */
 .btn {
