@@ -491,14 +491,11 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
   list-style: none;
   background: var(--accent-bg-color);
 }
-.menu__item:hover {
+.menu__item:hover, .menu__item--active {
   background: var(--highlight-color);
 }
 .menu__item:first-child {
   border: 0;
-}
-.menu__item--active {
-  background: var(--highlight-color);
 }
 .menu__link {
   display: block;
@@ -663,19 +660,16 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .content ol {
   list-style: decimal;
 }
-
 .content ul,
 .content ol {
   margin: 0 0 20px 40px;
 }
-
 .content ul ul,
 .content ol ol,
 .content ol ul,
 .content ul ol {
   margin: 0 0 0 40px;
 }
-
 .content li {
   margin-bottom: 5px;
 }
@@ -707,13 +701,10 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .tags__item:hover {
   background: var(--highlight-color);
 }
-
-.tags__link,
-.tags__link:hover {
+.tags__link, .tagslink:hover {
   display: block;
   padding: 10px 15px;
 }
-
 .tags__badge {
   float: left;
   width: 33px;
@@ -846,9 +837,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
   color: var(--body-text-color);
   background: var(--accent-bg-color);
 }
-
-.pagination__item:hover,
-.pagination__item--current {
+.pagination__item:hover, .pagination__item--current {
   color: var(--light-color);
   background: var(--highlight-color);
 }
@@ -938,24 +927,18 @@ input:focus {
   border: 1px solid var(--accent-bg-color);
   outline: none;
 }
-
-input[type=text],
-input[type=email],
-input[type=tel],
-input[type=url] {
+input[type=text], input[type=email], input[type=tel], input[type=url] {
   width: 60%;
 }
+input[type=text]:hover, input[type=email]:hover, input[type=tel]:hover, input[type=url]:hover {
+  border: 1px solid var(--light-color-4);
+}
 
-input[type=text]:hover,
-input[type=email]:hover,
-input[type=tel]:hover,
-input[type=url]:hover,
 textarea:hover {
   border: 1px solid var(--light-color-4);
 }
 
-input[type=submit],
-input[type=reset] {
+input[type=submit], input[type=reset] {
   display: inline-block;
   min-width: 150px;
   padding: 10px 15px;
@@ -968,9 +951,7 @@ input[type=reset] {
   transition: all 0.1s linear;
   -webkit-appearance: none;
 }
-
-input[type=submit]:hover,
-input[type=reset]:hover {
+input[type=submit]:hover, input[type=reset]:hover {
   background: var(--highlight-color);
 }
 
@@ -989,6 +970,7 @@ textarea {
   margin-bottom: 25px;
   overflow: hidden;
   /* Search widget */
+  /* Social widget */
 }
 .widget:last-child {
   margin-bottom: 0;
@@ -1024,11 +1006,9 @@ textarea {
   margin: 0 auto;
   background: var(--search-bg-color);
 }
-
 .widget-search__form .widget-search__submit {
   display: none;
 }
-
 .widget-search__field {
   position: relative;
   display: block;
@@ -1044,13 +1024,9 @@ textarea {
   transition: none;
   -webkit-appearance: none;
 }
-
-.widget-search__field:active,
-.widget-search__field:focus {
+.widget-search__field:active, .widget-search__field:focus {
   cursor: text;
 }
-
-/* Social widget */
 .widget-social__item {
   padding: 0;
   border: 0;
@@ -1159,10 +1135,7 @@ textarea {
   }
 }
 @media screen and (max-width: 620px) {
-  input[type=text],
-  input[type=email],
-  input[type=tel],
-  input[type=url] {
+  input[type=text], input[type=email], input[type=tel], input[type=url] {
     width: 88%;
   }
   .meta__item {
@@ -1187,8 +1160,7 @@ textarea {
   .pager__item--prev {
     padding-bottom: 25px;
   }
-  .content ul,
-  .content ol {
+  .content ul, .content ol {
     margin: 0 0 20px 20px;
   }
   .content ul ul,
@@ -1255,33 +1227,26 @@ textarea {
   padding-left: 0.5rem;
   cursor: pointer;
 }
-
-.link svg,
-.link img {
+.link svg, .link img {
   --size: 1.5rem;
   width: var(--size);
   height: var(--size);
   fill: var(--body-text-color);
 }
-
 .link__owner {
   position: relative;
 }
-
 .link__owner:hover .link {
   opacity: 1;
 }
-
 .link__copy {
   opacity: 1;
 }
 
-.copied::before,
-.copied::after {
+.copied::before, .copied::after {
   position: absolute;
   --search-bg-color: var(--generic-output-color);
 }
-
 .copied::before {
   --horizontal-offset: 2.4rem;
   content: var(--copied-text);
@@ -1300,7 +1265,6 @@ textarea {
   align-items: center;
   justify-content: center;
 }
-
 .copied::after {
   --horizontal-offset: 1.65rem;
   position: absolute;
@@ -1314,17 +1278,12 @@ textarea {
   transform-origin: 50% 50%;
   transform: rotate(90deg);
 }
-
-.copied:not(.js-left)::before,
-.copied:not(.js-left)::after {
+.copied:not(.js-left)::before, .copied:not(.js-left)::after {
   left: var(--horizontal-offset);
 }
-
-.copied.js-left::before,
-.copied.js-left::after {
+.copied.js-left::before, .copied.js-left::after {
   right: var(--horizontal-offset);
 }
-
 .copied.js-left::after {
   transform: rotate(-90deg);
 }
@@ -1349,7 +1308,6 @@ textarea {
 .windows .highlight {
   overflow-x: hidden;
 }
-
 .windows .highlight:hover {
   overflow-x: auto;
 }
@@ -1376,17 +1334,14 @@ textarea {
   margin-bottom: 0;
   background: transparent;
 }
-
 .highlight td,
 .highlight th {
   padding: 0;
 }
-
 .highlight .lntd {
   width: 100%;
   border: none;
 }
-
 .highlight .lntd:first-child pre {
   width: 100%;
   display: flex;
