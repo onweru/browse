@@ -78,53 +78,7 @@ Although, option 3 is great for quick testing, it is somewhat problematic when y
 Once set, jump over to the [hugo.toml](https://github.com/onweru/browse/blob/afdf1cd76408aeac11547a6abd51bdc5138a295f/exampleSite/hugo.toml#L4-L7) file and start configuring your site.
 
 ## Configuration
-
-### hugo.toml example
-config/_default/hugo.toml
-
-```toml
-baseurl = "/"
-title = "Browse"
-languageCode = "en-us"
-paginate = "10" # Number of posts per page
-theme = "browse"
-disqusShortname = "" # Enable Disqus comments by entering your Disqus shortname
-googleAnalytics = "" # Enable Google Analytics by entering your tracking id
-
-[Author] # Used in authorbox
-  name = "John Doe"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
-  avatar = "img/avatar.png"
-```
-
-### Example Params.toml file
-
-config/_default/params.toml
-
-```toml
-description = "John Doe's Personal blog about everything" # Site description. Used in meta description
-copyright = "John Doe" # Footer copyright holder, otherwise will use site title
-opengraph = true # Enable OpenGraph if true
-schema = true # Enable Schema
-twitter_cards = true # Enable Twitter Cards if true
-readmore = false # Show "Read more" button in list if true
-authorbox = true # Show authorbox at bottom of pages if true
-toc = true # Enable Table of Contents
-pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
-post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
-mainSections = ["post", "blog", "news"] # Specify section pages to show on home page and the "Recent articles" widget
-dateformat = "2006-01-02" # Change the format of dates
-mathjax = true # Enable MathJax
-mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
-mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
-googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
-customCSS = ["css/custom.css"] # Include custom CSS files
-customJS = ["js/custom.js"] # Include custom JS files
-defaultLightingMode = "auto" # other possible values: "dark", "light" ... if set to auto, the website will load in darkmode if the device is set to darkmode
-iconsDir = "img/" #defaults to "icons/"
-[style.vars]
-highlightColor = "#e22d30" # Override highlight color
-```
+Please see the config files inside `exampleSite/config/_default`
 
 #### Override font-family sets
 
