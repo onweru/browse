@@ -1,5 +1,3 @@
-{{- if hasPrefix site.GoogleAnalytics "G-" }}
+{{ if hugo.IsProduction }}
   {{ template "_internal/google_analytics.html" . }}
-{{- else }}
-  {{ template "_internal/google_analytics_async.html" . }}
-{{- end }}
+{{ end }}
