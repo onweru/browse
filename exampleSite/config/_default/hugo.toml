@@ -1,15 +1,10 @@
 baseurl = "/"
 title = "Browse Theme"
 languageCode = "en-us"
-paginate = "10" # Number of posts per page
+paginate = 10 # Number of posts per page
 # this example loads the theme as hugo module
 # comment out line below, and uncomment the line after it if you prefer to load the theme normally
 theme = ["github.com/onweru/browse"]
 # theme = "browse" # comment this out if you'ld rather use a fork of this repo or use it as a git submodule
 disqusShortname = "" # Enable comments by entering your Disqus shortname
 googleAnalytics = "" # Enable Google Analytics by entering your tracking id
-
-[Author]
-  name = "John Doe"
-  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
-  avatar = "img/avatar.png"

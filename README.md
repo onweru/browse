@@ -10,7 +10,7 @@
 
 + Main & secondary menus
 + Widgetized sidebar
-+ Configurable theme settings (sidebar position, author box, post navigation, highlight color) via `config.toml`
++ Configurable theme settings (sidebar position, author box, post navigation, highlight color) via `hugo.toml`
 + Custom Google Fonts support, MathJax, Table of Contents, SVG icons and much more…
 + Dark Mode
 
@@ -38,7 +38,7 @@ To pull in theme updates, run `hugo mod get -u ./...` from the theme folder. If 
 {{< tip "warning" >}}
 The exampleSite uses the theme as a hugo module by default.
 
-If you choose __Option 2__ or __Option 3__ below, ensure you edit [these lines in the config.toml file](https://github.com/onweru/browse/blob/b3e30e0816621223224897edc45eeeabd0d9cd16/exampleSite/config.toml#L4-L7) as advised on the comments. Else, you will not be able to pull theme updates.
+If you choose __Option 2__ or __Option 3__ below, ensure you edit [these lines in the hugo.toml file](https://github.com/onweru/browse/blob/b3e30e0816621223224897edc45eeeabd0d9cd16/exampleSite/hugo.toml#L4-L7) as advised on the comments. Else, you will not be able to pull theme updates.
 {{< /tip >}}
 
 ### Option 2 (recommended)
@@ -75,12 +75,12 @@ hugo server --themesDir ../..
 Although, option 3 is great for quick testing, it is somewhat problematic when you want to update your theme. You would need to be careful not to overwrite your changes.
 {{< /tip >}}
 
-Once set, jump over to the [config.toml](https://github.com/onweru/browse/blob/afdf1cd76408aeac11547a6abd51bdc5138a295f/exampleSite/config.toml#L4-L7) file and start configuring your site.
+Once set, jump over to the [hugo.toml](https://github.com/onweru/browse/blob/afdf1cd76408aeac11547a6abd51bdc5138a295f/exampleSite/hugo.toml#L4-L7) file and start configuring your site.
 
 ## Configuration
 
-### Config.toml example
-config/_default/config.toml
+### hugo.toml example
+config/_default/hugo.toml
 
 ```toml
 baseurl = "/"

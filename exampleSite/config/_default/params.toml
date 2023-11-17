@@ -2,12 +2,18 @@ description = "John Doe's Personal blog about everything" # Description of your 
 opengraph = true
 twitter_cards = false
 readmore = false # Show "Read more" button in list if true
-authorbox = true
 pager = true
 post_meta = ["date", "categories"] # Order of post meta information
 mainSections = ["post", "docs"]
 defaultLightingMode = "auto" # other possible values: "dark", "light"
 iconsDir = "img/" #defaults to "icons/"
+
+authorbox = true
+
+[author]
+  name = "John Doe"
+  bio = "John Doe's true identity is unknown. Maybe he is a successful blogger or writer. Nobody knows it."
+  avatar = "img/avatar.png"
 
 [logo]
 subtitle = "Just another site" # Logo subtitle
