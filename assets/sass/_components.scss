@@ -582,7 +582,7 @@ button:not(:-moz-focusring):focus>.menu__btn-title {
 		padding: 10px 15px;
 		font-weight: 700;
 		color: var(--body-text-color);
-		background: var(--accent-bg-color);
+		background: var(--mode-bg-color);
 		&:hover, &--current{
 			color: var(--light-color);
 			background: var(--highlight-color);
