@@ -1024,7 +1024,7 @@ textarea {
 			opacity: 0;
 			transform: scale(0.9);
 
-			.active {
+			&.active {
 				display: inline-block;
 				opacity: 1;
 			}
