@@ -6,20 +6,20 @@ homepage = "https://github.com/onweru/browse/"
 demosite = "https://browse.neuralvibes.com/"
 tags = ["blog", "responsive", "multilingual", "rss", "darkmode"]
 features = ["blog", "responsive", "multilingual", "rss", "darkmode"]
-min_version = "0.93.0"
+min_version = "0.123.0"
 
 [[authors]]
-  name = "Dan Weru"
-  homepage = "https://neuralvibes.com/author/"
+name = "Dan Weru"
+homepage = "https://neuralvibes.com/author/"
 [[authors]]
-  name = "Andrew Hoog"
-  homepage = "https://www.nowsecure.com/"
+name = "Andrew Hoog"
+homepage = "https://www.nowsecure.com/"
 [[authors]]
-  name = "Vimux"
-  homepage = "https://github.com/Vimux"
+name = "Vimux"
+homepage = "https://github.com/Vimux"
 
 # If porting an existing theme
 [original]
-  name = "Mainroad Hugo Theme"
-  homepage = "https://github.com/Vimux/Mainroad"
-  repo = "https://github.com/Vimux/Mainroad"
+name = "Mainroad Hugo Theme"
+homepage = "https://github.com/Vimux/Mainroad"
+repo = "https://github.com/Vimux/Mainroad"

@@ -1,12 +1,13 @@
 {{ $variables := resources.Get "css/variables.css" | resources.ExecuteAsTemplate "css/variables.css" . -}}
 {{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
-{{ $style =  slice $variables $style | resources.Concat "js/main.css" }}
+{{ $style = slice $variables $style | resources.Concat "js/main.css" }}
 <link rel="stylesheet" href="{{ $style.RelPermalink }}">
 
 {{- $options := (dict "targetPath" "css/styles.css" "outputStyle" "compressed" "enableSourceMap" "true") -}}
-{{- $styles := resources.Get "sass/index.scss" | resources.ExecuteAsTemplate "sass/index.scss" . | resources.ToCSS $options | resources.Fingerprint "sha512" }}
-<link rel = 'stylesheet' href = '{{ $styles.RelPermalink }}' integrity = '{{ $styles.Data.Integrity }}'>
+{{- $styles := resources.Get "sass/index.scss" | resources.ExecuteAsTemplate "sass/index.scss" . | toCSS
+$options | fingerprint "sha512" }}
+<link rel='stylesheet' href='{{ $styles.RelPermalink }}' integrity='{{ $styles.Data.Integrity }}'>
 
 {{ range site.Params.customCSS -}}
-  <link rel="stylesheet" href="{{ . | relURL }}">
+<link rel="stylesheet" href="{{ . | relURL }}">
 {{- end }}

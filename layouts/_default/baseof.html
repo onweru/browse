@@ -1,43 +1,43 @@
 {{- $config := site.Params }}
 <!DOCTYPE html>
-<html class="no-js"
-			lang="{{ site.Language.Lang }}"
-			{{ with $config.defaultLightingMode }}
-				data-mode="{{ . }}"
-			{{ end }}>
+<html class="no-js" lang="{{ site.Language.Lang }}" {{ with $config.defaultLightingMode }} data-mode="{{ . }}" {{ end
+	}}>
+
 <head>
 	{{ partial "head" . }}
 </head>
+
 <body class="body">
 	<div class="container container--outer">
 		{{ block "header" . }}{{ partial "header.html" . }}{{ end }}
 		<div class="wrapper flex">
 			<div class="primary">
-			{{ block "main" . }}
+				{{ block "main" . }}
 				{{ with .Content }}
 				<div class="content main__content clearfix">
 					{{ . }}
 				</div>
 				{{ end }}
-			{{ end }}
+				{{ end }}
 			</div>
 			{{ block "sidebar" . }}{{ partial "sidebar.html" . }}{{ end }}
 		</div>
 		{{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
 	</div>
 
-{{- $funcPath := "js/functions.js" }}
-{{- $functions := resources.Get $funcPath | resources.ExecuteAsTemplate $funcPath . }}
+	{{- $funcPath := "js/functions.js" }}
+	{{- $functions := resources.Get $funcPath | resources.ExecuteAsTemplate $funcPath . }}
 
-{{- $mainScriptPath := "js/index.js" }}
-{{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
+	{{- $mainScriptPath := "js/index.js" }}
+	{{- $main := resources.Get $mainScriptPath | resources.ExecuteAsTemplate $mainScriptPath . }}
 
-{{- $bundle := slice $functions $main | resources.Concat "js/bundle.js" | resources.Fingerprint "sha512" }}
-<script src="{{ $bundle.Permalink }}"></script>
+	{{- $bundle := slice $functions $main | resources.Concat "js/bundle.js" | fingerprint "sha512" }}
+	<script src="{{ $bundle.Permalink }}"></script>
 
-{{ range $config.customJS -}}
-<script src="{{ . | relURL }}"></script>
-{{- end }}
-{{- partial "mathjax.html" . -}}
+	{{ range $config.customJS -}}
+	<script src="{{ . | relURL }}"></script>
+	{{- end }}
+	{{- partial "mathjax.html" . -}}
 </body>
+
 </html>
